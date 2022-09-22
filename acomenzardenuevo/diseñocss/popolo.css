@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    background: white;
+}
+.container-cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+.card:hover{
+    width: 350px;
+}
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+.card:hover .cover img{
+    top: 0px;
+}
+.card .img-back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+.card:nth-of-type(1) .img-back{
+    background-image: url(../imagenes2/bamrosa.jpg);
+}
+.card:nth-of-type(2) .img-back{
+    background-image: url(../imagenes2/bamazul.jpg);
+}
+.card:nth-of-type(3) .img-back{
+    background-image: url(../imagenes2/bamki.jpg);
+}
+.card:nth-of-type(4) .img-back{
+    background-image: url(../imagenes2/bamlo.jpg);
+}
+.card:nth-of-type(5) .img-back{
+    background-image: url(../imagenes2/bamje.jpg);
+}
+.card:nth-of-type(6) .img-back{
+    background-image: url(../imagenes2/bamji.jpg);
+}
+.card:nth-of-type(7) .img-back{
+    background-image: url(../imagenes2/bamjo.jpg);
+    
+}
+.card:nth-of-type(8) .img-back{
+    background-image: url(../imagenes2/bamban.jpg);
+}
+.card:nth-of-type(9) .img-back{
+    background-image: url(../imagenes2/bamse.jpg);
+}
+.card:nth-of-type(10) .img-back{
+    background-image: url(../imagenes2/bammr.jpg);
+}
+
+.card:hover .img-back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(233, 0, 0);
+    color: aqua;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+.card .description input:hover{
+    background: #d3d31b;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ff9900;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+center{
+    padding-top: 100px;
+}
+.header-content{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 b{
+    color: #f33737;
+}
+.logo h1{
+    color: #fbff16;
+}
+.menu{
+  
+    height: 80px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu nav ul li::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #f33737;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu-selected::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #fbff16;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition: color 300ms;
+}
+.menu .text-menu-selected{
+    color: rgb(55, 56, 56);
+}
+
+.container-cover{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../imagenes2/colegio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fbff16c0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.container-info-cover h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+}
+.container-info-cover{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pag{
+    background-color: #f1c942;
+    width: 100%;
+    position: absolute;
+    bottom: -330%;
+    
+}
+.pie-pag .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pag .grupo1 .bancoO figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pag .grupo1 .bancoO figure img{
+    width: 260px;
+}
+.pie-pag .grupo1 .bancoO h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.pie-pag .grupo1 .bancoO h3{
+    color: black;
+    margin-bottom: 25px;
+}
+.pie-pag .grupo1 .redessocial  a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(250, 3, 3);
+    margin-right: 10px;
+    background-color: #fbff00;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pag .grupo1 .redesocial a:hover{
+    color: aqua;
+}
+.pie-pag .grupo2{
+    background-color: rgb(26, 182, 202);
+    padding: 15px 10px;
+    text-align: center;
+    
+}
+.pie-pag .grupo2 small{
+    font-size: 15px;
+    color: #070707;
+}
+@media screen and (max-width:800px){
+    .pie-pag .grupo1{
+        width: 90%;
+        
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px ;
+    }
+    
+}
+
+#nw1{
+    color: #fffb00;
+}
+
